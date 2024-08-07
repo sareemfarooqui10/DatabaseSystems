@@ -1,6 +1,8 @@
 The database, named fitlife_db, consists of several tables that are interconnected, which is of a structured fitness training application to manage fitness plans, user information, and 
 exercise routines.
+
 **********Tables and Their Purposes**********
+
 admin Table:
 Purpose: Stores information about the admin users who can manage the application.
 Fields:
@@ -37,6 +39,7 @@ user_detail_id: Primary key, unique identifier for each user detail entry. user_
 user_lname, user_age, user_height, user_weight, gender, user_dob: Various personal details about the user.
 
 ********IMPORTANT*********
+
 - The exercise table references the exercise_plans table, linking exercises to specific plans.
 - The purchased table links users to their purchased plans, with foreign keys pointing to the user and exercise_plans tables.
 - The user_details table is related to the user table, providing additional personal information about each user.
